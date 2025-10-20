@@ -30,5 +30,26 @@ print("Hola " + mensaje)
 ##Formateo de string
 saludo = "hola"
 nombre = "Ana"
+edad = 30
 frase = saludo + " " + nombre
 print(frase)
+
+frase = "hola {} tienes {} años".format(nombre, edad)
+print("La frase es: " + frase)
+
+frase2 = f"Hola {nombre}, tienes {edad} años"
+print("La frase 2 es: "+ frase2)
+
+##Actividad
+texto = "este curso es de python para datascience"
+print("Numero total de caracteres: " + str(len(texto)))
+print("Caracteres sin contar el espacio: " + str(len(texto) - texto.count(" ")))
+print("Cantidad de vocales:" + str(texto.count("a")+ texto.count("e") + texto.count("i") + texto.count("o") + texto.count("u")))
+print("Numero de palabras: " + str(texto.count(" ") + 1))
+
+primer_espacio = texto.find(" ") #Indice en el que se encuentra el primer espacio
+print("Sin la primera palabra: " + texto[primer_espacio+1:])
+
+print("Reemplazar espacion por guin medio: " + texto.replace(" ", "-"))
+
+print("Cambio de mayusculas a minusculas y viceversa: "+ texto.swapcase())
