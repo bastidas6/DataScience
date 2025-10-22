@@ -79,3 +79,33 @@ nombre = ("Juan", "Pérez")
 cliente = (nombre, nacimiento)
 print(cliente)
 print(type(cliente))
+
+#DICCIONARIOS
+#Se caracteriza por ser una coleccion de elementos, y cada elemento se componen de una clave y de un valor, no puede haber valor sin clave y viceversa y las claves deben ser unicas
+#Los diccionarios no se pueden indexar, ya que no son secuencias ordenadas, por eso no se pueden encontrar por un indice, se debe hallar es por clave
+
+dic = {}
+print(type(dic))
+
+edades = {"Juan": 25, "Maria": 32}
+print(len(edades))
+
+print(edades["Juan"]) #me devuelve 25
+
+edades["Juan"] = 34
+print(edades["Juan"])
+
+edades["Laura"] = 11
+print(edades)
+
+print(edades.keys())
+
+print(edades.values())
+
+print(edades.items())
+
+print(edades.get("Juan"))
+
+edades.update({"Juan":27})
+
+print(edades.items())
