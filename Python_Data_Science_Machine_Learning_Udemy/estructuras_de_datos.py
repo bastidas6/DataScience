@@ -109,3 +109,23 @@ print(edades.get("Juan"))
 edades.update({"Juan":27})
 
 print(edades.items())
+
+#BOOLEANOS
+#Solo puede tener dos valores posibles: verdadero o falso
+
+a = True
+print(type(a))
+
+x = 2
+y = 5
+comparar = x == y
+
+print(comparar)
+
+#Operadores booleanos and, or y not
+z = 8
+comparar = x < y and y < z
+print(comparar)
+
+otra = not comparar #Comparar no es verdadera? = comparar es falsa?
+print(otra)
