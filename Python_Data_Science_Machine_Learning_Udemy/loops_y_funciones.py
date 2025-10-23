@@ -101,3 +101,24 @@ def saludar():
 
 saludar()
 
+#Ejercicio
+def calcular_tablas (numero, limite):
+    for i in range(1,limite + 1):
+        resultado = numero * i
+        print(f"{numero} x {i} = {resultado}")
+
+calcular_tablas(5,3)
+
+def solicitar_informacion():
+    numero = int(input("Ingrese el numero: "))
+    limite = int(input("Ingrese el limite: "))
+    calcular_tablas(numero, limite)
+
+bandera = True
+while bandera == True:
+    solicitar_informacion()
+    respuesta = int(input("Marque 1 si desea calcular otra tabla --- Marque 2 si desea finalizar el porgrama"))
+    if respuesta == 1:
+        continue
+    else:
+        break
