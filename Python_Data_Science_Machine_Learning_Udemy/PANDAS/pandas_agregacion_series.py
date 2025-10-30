@@ -19,3 +19,26 @@ print(f"El valor maximo es: {maximo}")
 #Minimo
 minimo = numeros.min()
 print(f"El valor minimo es: {minimo}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
